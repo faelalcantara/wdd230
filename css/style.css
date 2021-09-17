@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--header-font: "Montserrat", sans-serif;
+	--main-font: "Poppins", sans-serif;
+	--white: #ffffff;
+	--background: #121214;
+	--gray-100: #3d3c42;
+	--gray-200: #29292e;
+	--primary: #8257e6;
+	--secondary: #04d361;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--background);
+	font-family: var(--main-font);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: var(--white);
+}
+
+ul li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--header-font);
+}
+
+#main-container {
+	color: var(--white);
+	width: 900px;
+	height: 500px;
+	/* background: yellow; */
+}
+
+header {
+	width: 100%;
+	padding: 2rem 3rem;
+	display: flex;
+	align-items: center;
+	background: var(--gray-200);
+	/* border: var(--gray-100) solid 1px; */
+	border-radius: 5px;
+}
+
+.profile-picture {
+	display: flex;
+	align-items: center;
+}
+
+.profile-picture img {
+	width: 11rem;
+	height: 11rem;
+	border-radius: 50%;
+	border: var(--primary) solid 4px;
+}
+
+.profile-info {
+	margin-left: 2rem;
+}
+
+.profile-info p {
+	margin-top: 0.5rem;
+}
+
+main {
+	padding: 3rem;
+	border: var(--secondary) solid 1px;
+	border-radius: 5px;
+	margin-top: 1rem;
+}
+
+main h2 {
+	font-size: 1.4rem;
+}
+
+main ul {
+	margin-top: 1rem;
+}
+
+main ul li + li {
+	margin-top: 0.2rem;
+}
+
+footer {
+	width: 100%;
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	margin-top: 1rem;
+}
+
+.copyright {
+	font-weight: 400;
+}
+
+.last-update span {
+	color: var(--secondary);
+	margin-top: 0.25rem;
+}
+
+ul.buttons-container {
+	width: 100%;
+	/* background: yellow; */
+	margin-top: 1rem;
+	display: flex;
+}
+
+ul.buttons-container li {
+	background: var(--gray-100);
+	font-size: 0.85rem;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	display: flex;
+}
+
+ul.buttons-container a li:hover {
+	background: var(--primary);
+	cursor: pointer;
+}
+
+ul.buttons-container li img {
+	width: 1.2rem;
+}
+
+ul.buttons-container li div {
+	margin-left: 0.5rem;
+}
+
+ul.buttons-container a + a {
+	margin-left: 0.5rem;
+}
