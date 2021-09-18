@@ -82,17 +82,21 @@ header {
 	margin-top: 0.5rem;
 }
 
-ul.buttons-container {
+.buttons-container {
 	width: 100%;
 	margin-top: 1rem;
 	display: flex;
 }
 
-ul.buttons-container a {
+.buttons-container a {
 	text-decoration: none;
 }
 
-ul.buttons-container li {
+.buttons-container a + a {
+	margin-left: 0.5rem;
+}
+
+.social-button {
 	background: var(--gray-100);
 	font-size: 0.85rem;
 	border-radius: 5px;
@@ -100,21 +104,14 @@ ul.buttons-container li {
 	display: flex;
 }
 
-ul.buttons-container a li:hover {
+.social-button:hover {
 	background: var(--primary);
 	cursor: pointer;
 }
 
-ul.buttons-container li img {
+.social-button img {
 	width: 1.2rem;
-}
-
-ul.buttons-container li div {
-	margin-left: 0.5rem;
-}
-
-ul.buttons-container a + a {
-	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 /* MAIN */
