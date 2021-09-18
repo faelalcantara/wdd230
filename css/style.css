@@ -20,16 +20,11 @@
 
 body {
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: var(--background);
 	font-family: var(--main-font);
-}
-
-a {
-	text-decoration: none;
 }
 
 a:link,
@@ -53,18 +48,17 @@ h6 {
 
 #main-container {
 	color: var(--white);
-	width: 900px;
-	height: 500px;
-	/* background: yellow; */
+	max-width: 57.25rem;
+	padding: 5rem 2rem;
 }
 
+/* HEADER */
 header {
 	width: 100%;
 	padding: 2rem 3rem;
 	display: flex;
 	align-items: center;
 	background: var(--gray-200);
-	/* border: var(--gray-100) solid 1px; */
 	border-radius: 5px;
 }
 
@@ -88,6 +82,42 @@ header {
 	margin-top: 0.5rem;
 }
 
+ul.buttons-container {
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+}
+
+ul.buttons-container a {
+	text-decoration: none;
+}
+
+ul.buttons-container li {
+	background: var(--gray-100);
+	font-size: 0.85rem;
+	border-radius: 5px;
+	padding: 0.75rem 1.2rem;
+	display: flex;
+}
+
+ul.buttons-container a li:hover {
+	background: var(--primary);
+	cursor: pointer;
+}
+
+ul.buttons-container li img {
+	width: 1.2rem;
+}
+
+ul.buttons-container li div {
+	margin-left: 0.5rem;
+}
+
+ul.buttons-container a + a {
+	margin-left: 0.5rem;
+}
+
+/* MAIN */
 main {
 	padding: 3rem;
 	border: var(--secondary) solid 1px;
@@ -107,6 +137,11 @@ main ul li + li {
 	margin-top: 0.2rem;
 }
 
+ul.assignment-links a:hover {
+	color: var(--primary);
+}
+
+/* FOOTER */
 footer {
 	width: 100%;
 	font-size: 0.8rem;
@@ -115,6 +150,15 @@ footer {
 	align-items: center;
 	border-radius: 5px;
 	margin-top: 1rem;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+ul.footer-info li + li {
+	margin-left: 0.5rem;
 }
 
 .copyright {
@@ -126,34 +170,43 @@ footer {
 	margin-top: 0.25rem;
 }
 
-ul.buttons-container {
-	width: 100%;
-	/* background: yellow; */
-	margin-top: 1rem;
-	display: flex;
-}
+/* Moile Version */
+@media (max-width: 858px) {
+	#main-container {
+		width: 100%;
+		padding: 1.8125rem;
+	}
 
-ul.buttons-container li {
-	background: var(--gray-100);
-	font-size: 0.85rem;
-	border-radius: 5px;
-	padding: 0.5rem 1rem;
-	display: flex;
-}
+	header {
+		flex-direction: column;
+		padding: 3rem 1.8125rem;
+		text-align: center;
+	}
 
-ul.buttons-container a li:hover {
-	background: var(--primary);
-	cursor: pointer;
-}
+	.profile-info {
+		margin-left: 0;
+		margin-top: 1.8125rem;
+	}
 
-ul.buttons-container li img {
-	width: 1.2rem;
-}
+	.buttons-container {
+		display: flex;
+		justify-content: center;
+	}
 
-ul.buttons-container li div {
-	margin-left: 0.5rem;
-}
+	main {
+		margin-top: 1.8125rem;
+	}
 
-ul.buttons-container a + a {
-	margin-left: 0.5rem;
+	footer {
+		margin-top: 1.8125rem;
+	}
+
+	footer ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	ul.footer-info li + li {
+		margin-left: 0;
+	}
 }

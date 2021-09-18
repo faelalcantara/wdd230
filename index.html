@@ -4,14 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will serve as an assignment portal for Rafael Alcantara da Silva which you will be updated throughout the course with links to lesson assignments and projects"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Rafael Alcantara - WDD 230 Section 11</title>
+		<title>WDD 230: Assignment Portal</title>
 	</head>
 	<body>
 		<div id="main-container">
 			<header>
 				<div class="profile-picture">
-					<img src="images/rafael.heic" alt="Rafael Alcantara" />
+					<img
+						src="images/rafael.jpg"
+						alt="Rafael Alcantara's profile-picture"
+					/>
 				</div>
 				<div class="profile-info">
 					<h1>Rafael Alcantara</h1>
@@ -22,36 +30,48 @@
 					<ul class="buttons-container">
 						<a href="https://github.com/faelalcantara" target="_blank">
 							<li>
-								<img src="images/github.svg" alt="github" />
+								<img src="images/github.svg" alt="Github icon" />
 								<div>GitHub</div>
 							</li>
 						</a>
 						<a href="https://instagram.com/faelalcantara.dev" target="_blank">
 							<li>
-								<img src="images/instagram.svg" alt="github" />
+								<img src="images/instagram.svg" alt="Instagram icon" />
 								<div>Instagram</div>
 							</li>
 						</a>
 					</ul>
 				</div>
 			</header>
+
 			<main>
 				<h2>WDD 230: Assignment Portal</h2>
-				<ul>
-					<li>Lesson 01: <a href="#">Assignment link</a></li>
+				<ul class="assignment-links">
 					<li>Lesson 02: <a href="#">Assignment link</a></li>
 					<li>Lesson 03: <a href="#">Assignment link</a></li>
+					<li>Lesson 04: <a href="#">Assignment link</a></li>
 				</ul>
 			</main>
+
 			<footer>
-				<div class="copyright">
-					&copy; 2021 | Rafael Alcantara da Silva | Rio de Janeiro - Brazil |
-					BYUI Online Learning
-				</div>
+				<ul class="footer-info">
+					<li class="copyright">
+						&copy; <span id="current-year">Current year</span> | Rafael
+						Alcantara da Silva | Brazil
+					</li>
+					<li class="byui-link">
+						<a href="https://www.byui.edu/online" target="_blank"
+							>BYUI Online Learning</a
+						>
+					</li>
+				</ul>
+
 				<div class="last-update">
-					Last Updated: <span>09/16/2021 10:53:05</span>
+					Last Updated: <span id="last-modified">Date and time</span>
 				</div>
 			</footer>
 		</div>
+
+		<script src="js/script.js"></script>
 	</body>
 </html>
