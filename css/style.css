@@ -168,7 +168,7 @@ ul.footer-info li + li {
 }
 
 /* Moile Version */
-@media (max-width: 858px) {
+@media (max-width: 980px) {
 	#main-container {
 		width: 100%;
 		padding: 1.8125rem;
