@@ -102,6 +102,7 @@ header {
 	border-radius: 5px;
 	padding: 0.75rem 1.2rem;
 	display: flex;
+	align-items: center;
 }
 
 .social-button:hover {
@@ -134,6 +135,10 @@ main ul li + li {
 	margin-top: 0.2rem;
 }
 
+ul.assignment-links a {
+	margin-left: 0.4rem;
+}
+
 ul.assignment-links a:hover {
 	color: var(--primary);
 }
@@ -162,9 +167,12 @@ ul.footer-info li + li {
 	font-weight: 400;
 }
 
+.last-update {
+	margin-top: 0.25rem;
+}
+
 .last-update span {
 	color: var(--secondary);
-	margin-top: 0.25rem;
 }
 
 /* Moile Version */
