@@ -1,0 +1,40 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+	.menu {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul#primary-nav {
+		max-width: 53rem;
+		position: inherit;
+		height: 100%;
+		display: flex;
+	}
+
+	nav ul#primary-nav li {
+		font-size: 1.1rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	main {
+		width: 100%;
+		max-width: 56rem;
+		align-self: center;
+	}
+
+	footer ul {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer ul li + li {
+		margin-left: 1rem;
+	}
+} /*end large */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will provide information about the weather in Preston, Idaho."
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+		<title>Preston Idaho | HowIsTheWeather.com</title>
+	</head>
+
+	<body>
+		<header>
+			<button onclick="toggleMenu()" class="menu">
+				<span class="menu-global menu-top"></span>
+				<span class="menu-global menu-middle"></span>
+				<span class="menu-global menu-bottom"></span>
+			</button>
+
+			<nav class="navbar">
+				<div class="logo-container">
+					<img src="images/logo.png" alt="" />
+				</div>
+
+				<ul id="primary-nav" class="hide">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Preston</a></li>
+					<li><a href="#">Soda Springs</a></li>
+					<li><a href="#">Fish Haven</a></li>
+					<li><a href="#">Storm Center</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="hero-container">
+				<h1>Preston Idaho</h1>
+			</div>
+			<div class="contentbox">Hero with weather summary</div>
+			<div class="contentbox">5 Day Forecast</div>
+			<div class="contentbox">Article</div>
+			<div class="contentbox">Contact information</div>
+		</main>
+
+		<footer>
+			<ul class="footer-info">
+				<li class="copyright">
+					&copy;HowIsTheWeather | Rafael A. da Silva
+				</li>
+				<li id="date">Current Date</li>
+			</ul>
+		</footer>
+    <script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+	main {
+		padding: 4rem;
+	}
+
+	nav ul li {
+		text-align: center;
+	}
+} /*end medium */
