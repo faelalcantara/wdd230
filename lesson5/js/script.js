@@ -22,4 +22,4 @@ let currentDate = date.toLocaleDateString('en-US', options);
 // Display date inside the footer
 document.querySelector('#date').textContent = currentDate;
 // Display banner if it's Friday
-weekDay == 2 ? document.querySelector(".banner").classList.remove("hide") : '';
+weekDay == 5 ? document.querySelector(".banner").classList.remove("hide") : '';
