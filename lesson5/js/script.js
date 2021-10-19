@@ -10,7 +10,6 @@ function toggleMenu() {
   document.querySelector(".menu").classList.toggle("nav-fixed");
   document.querySelector("main").classList.toggle("fix-top");
   document.querySelector("body").classList.toggle("scroll-block");
-  document.querySelector(".banner").classList.toggle("hide");
 }
 
 // Get current date
