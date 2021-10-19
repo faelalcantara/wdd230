@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will provide information about the weather in Preston, Idaho."
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<title>Preston Idaho | HowIsTheWeather.com</title>
+	</head>
+
+	<body>
+		<div class="banner hide">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+		<header>
+			<nav class="navbar">
+				<button onclick="toggleMenu()" class="menu">
+					<span class="menu-global menu-top"></span>
+					<span class="menu-global menu-middle"></span>
+					<span class="menu-global menu-bottom"></span>
+				</button>
+				<div class="logo-container">
+					<img src="images/logo.png" alt="" />
+				</div>
+
+				<ul id="primary-nav" class="hide">
+					<li><a href="#">Home</a></li>
+					<li class="active-page"><a href="preston-5.html">Preston</a></li>
+					<li><a href="#">Soda Springs</a></li>
+					<li><a href="#">Fish Haven</a></li>
+					<li><a href="#">Storm Center</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="hero-container">
+				<h1>Preston Idaho</h1>
+
+				<div class="image-container">
+					<div class="weather-summary">
+						<h2>Weather Summary</h2>
+						<div class="summary-item">Currently: <span>Sunny</span></div>
+						<div class="summary-item">High: <span>76 °F</span></div>
+						<div class="summary-item">Wind Chill: <span>°F</span></div>
+						<div class="summary-item">Humidity: <span>69%</span></div>
+						<div class="summary-item">Wind Speed: <span>5 mph</span></div>
+					</div>
+					<img
+						src="images/preston-idaho.jpg"
+						alt="Potography of Preston Town, Idaho"
+					/>
+				</div>
+			</div>
+
+			<div class="forecast">
+				<h3>5 Day Forecast</h3>
+				<div class="forecast-main">
+					<div class="forecast-day">
+						<div class="wee-day">Wed</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">89 °F</div>
+					</div>
+					<div class="forecast-day">
+						<div class="wee-day">Thu</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">85 °F</div>
+					</div>
+					<div class="forecast-day">
+						<div class="wee-day">Fri</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">79 °F</div>
+					</div>
+					<div class="forecast-day">
+						<div class="wee-day">Sat</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">82 °F</div>
+					</div>
+					<div class="forecast-day">
+						<div class="wee-day">Sun</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">75 °F</div>
+					</div>
+				</div>
+			</div>
+
+			<article>
+				<h3>Founders Day Fresco</h3>
+				<p>
+					<img
+						class="img-article-large"
+						src="images/preston-article.jpg"
+						alt="Preston Town, Idaho picture"
+					/>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+					delectus laboriosam ut cupiditate obcaecati suscipit earum adipisci?
+					At aperiam minus quaerat qui, numquam minima alias, possimus ut odit
+					pariatur exercitationem. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Animi delectus laboriosam ut cupiditate obcaecati
+					suscipit earum adipisci? Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Animi delectus laboriosam ut cupiditate obcaecati
+					suscipit earum adipisci? At aperiam minus quaerat qui, numquam minima
+					alias. At aperiam minus quaerat qui, numquam minima alias, possimus ut
+					odit pariatur exercitationem. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.
+					<img
+						class="img-article-small"
+						src="images/preston-article.jpg"
+						alt="Preston Town, Idaho picture"
+					/>
+				</p>
+			</article>
+
+			<div class="contact-area">
+				<div class="contact-info">
+					<h3>HowIsTheWeather</h3>
+					<p>480 S 1st W, Rexburg, ID</p>
+					<p>999.999.9999</p>
+					<p>contact@howistheweather.com</p>
+				</div>
+				<div class="map">
+					<iframe
+						id="gmap_canvas"
+						src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					></iframe>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<ul class="footer-info">
+				<li class="copyright">&copy;HowIsTheWeather | Rafael A. da Silva</li>
+				<li id="date">Current Date</li>
+			</ul>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
