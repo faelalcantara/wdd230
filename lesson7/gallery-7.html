@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will provide information about the weather in Preston, Idaho."
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/> -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<title>Preston Idaho | HowIsTheWeather.com</title>
+	</head>
+
+	<body>
+		<div class="banner hide">
+			Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+			park pavilion.
+		</div>
+		<header>
+			<nav class="navbar">
+				<button onclick="toggleMenu()" class="menu">
+					<span class="menu-global menu-top"></span>
+					<span class="menu-global menu-middle"></span>
+					<span class="menu-global menu-bottom"></span>
+				</button>
+				<div class="logo-container">
+					<img src="images/logo.png" alt="" />
+				</div>
+
+				<ul id="primary-nav" class="hide">
+					<li><a href="#">Home</a></li>
+					<li class="active-page"><a href="preston-5.html">Preston</a></li>
+					<li><a href="#">Soda Springs</a></li>
+					<li><a href="#">Fish Haven</a></li>
+					<li><a href="#">Storm Center</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="hero-container">
+				<h1>Weather Gallery</h1>
+				<div class="last-visit"></div>
+
+			<div class="gallery">
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image1.jpg"
+									alt="A beautiful and sunny day on a paradisiacal beach"
+								>
+							</picture>
+						</div>
+						<p>A beautiful and sunny day on a paradisiacal beach.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image2.jpg"
+									alt="A snowing day in the center of the city"
+								>
+							</picture>
+						</div>
+						<p>A snowing day in the center of the city.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image3.jpg"
+									alt="A stormy night with thunder and lightning in the sky"
+								>
+							</picture>
+						</div>
+						<p>A stormy night with thunder and lightning in the sky.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image4.jpg"
+									alt="A hurricane is brewing. Photo taken from above"
+								>
+							</picture>
+						</div>
+						<p>A hurricane is brewing. Photo taken from above.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image5.jpg"
+									alt="A sunny day in the pasture with some clouds in the sky"
+								>
+							</picture>
+						</div>
+						<p>A sunny day in the pasture with some clouds in the sky.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image6.jpg"
+									alt="A storm in the sky and a big hurricane brewing"
+								>
+							</picture>
+						</div>
+						<p>A storm in the sky and a big hurricane brewing. </p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image7.jpg"
+									alt="A couple walks with the umbrella and the snow falling"
+								>
+							</picture>
+						</div>
+						<p>A couple walks with the umbrella and the snow falling.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image8.jpg"
+									alt="A forest in a day with fog and the sun in the background"
+								>
+							</picture>
+						</div>
+						<p>A forest in a day with fog and the sun in the background.</p>
+					</div>
+					<div class="gallery-card">
+						<div class="image-container">
+							<picture>
+								<img
+									src="https://via.placeholder.com/400x300?text=Image"
+									data-src="images/image9.jpg"
+									alt="A sunny day at the beach"
+								>
+							</picture>
+						</div>
+						<p>A sunny day at the beach.</p>
+					</div>
+			</div>
+		</main>
+
+		<footer>
+			<ul class="footer-info">
+				<li class="copyright">&copy;HowIsTheWeather | Rafael A. da Silva</li>
+				<li id="date">Current Date</li>
+			</ul>
+		</footer>
+
+		<script src="js/last_visit.js"></script>
+		<script src="js/progressive_load.js"></script>
+		<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Open Sans:400,600", "Roboto:900"],
+				},
+			});
+		</script>
+	</body>
+</html>

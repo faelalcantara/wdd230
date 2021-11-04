@@ -122,10 +122,21 @@ main {
 
 main h2 {
 	font-size: 1.4rem;
+	margin-bottom: 1rem;
 }
 
 main ul {
 	margin-top: 1rem;
+}
+
+main ul li {
+	line-height: 1.5rem;
+	padding: .8rem;
+	border-bottom: 1px solid var(--gray-100);
+}
+
+main ul li:first-child{
+	border-top: 1px solid var(--gray-100);
 }
 
 main ul li + li {
@@ -133,7 +144,9 @@ main ul li + li {
 }
 
 ul.assignment-links a {
-	margin-left: 0.4rem;
+	text-decoration: none;
+	color: var(--secondary);
+	margin: 0 0.4rem;
 }
 
 ul.assignment-links a:hover {
