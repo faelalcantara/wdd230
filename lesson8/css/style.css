@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --even-line:#e7f0ed;
+  --odd-line:  #e7ffed;
+  --blue-100: #628ca6;
+  --blue-200: #7fb9c2;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  padding: 1rem;
+}
+
+#data-table {
+  border-collapse: collapse;
+  border: 1px solid rgb(200,200,200);
+  margin: 4rem auto 0;
+  box-shadow: 11px 11px 9px 0px #628CA6;
+}
+
+thead tr:nth-child(1) th {
+  font-size: 1.5rem;
+}
+
+thead tr:nth-child(2) th {
+  font-size: 1.1rem;
+}
+
+td, th {
+  text-align: center;
+  border: 1px solid rgb(200,200,200);
+  padding: .5rem .625rem;
+}
+
+thead tr:first-child {
+  background: var(--blue-200);
+}
+
+thead tr + tr{
+  background: var(--blue-100);
+  color: white;
+}
+
+tbody tr:nth-child(odd) td{
+  background: var(--odd-line);
+}
+
+tbody tr:nth-child(even) td{
+  background: var(--even-line);
+}
+
+
+tbody tr:nth-child(3) td:nth-child(3){
+  background: var(--blue-100);
+  color: white;
+}
+
+tfoot tr td {
+  font-size: .75rem;
+  background: var(--blue-200);
+}
