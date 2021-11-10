@@ -3,6 +3,10 @@
 	.menu {
 		display: none;
 	}
+	
+	/* nav {
+		position: inherit;
+	} */
 
 	nav.navbar {
 		display: flex;
@@ -12,7 +16,7 @@
 	nav ul#primary-nav {
 		width: 100%;
 		max-width: 53rem;
-		position: inherit;
+		position: initial;
 		height: 100%;
 		display: flex;
 	}
