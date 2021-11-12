@@ -55,9 +55,13 @@ tbody tr:nth-child(even) td{
 }
 
 
-tbody tr:nth-child(3) td:nth-child(3){
+tbody tr:nth-child(4) td:nth-child(3){
   background: var(--blue-100);
   color: white;
+}
+
+tbody tr:nth-child(5) td:nth-child(1){
+  font-style: italic;
 }
 
 tfoot tr td {
