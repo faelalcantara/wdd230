@@ -324,7 +324,7 @@ article {
 	background-color: var(--grey-blue);
 	color: var(--secondary);
 	display: grid;
-	grid-column: 1fr;
+	grid-template-columns: 1fr;
 	border-radius: 1rem;
 	margin-bottom: 2rem;
 }
