@@ -119,6 +119,10 @@ nav {
 	padding: 4.3125rem;
 }
 
+.fix-padding {
+	margin-top: 4.3125rem;
+}
+
 .logo-container {
 	padding: 1.8125rem;
 }
@@ -128,11 +132,10 @@ nav {
 }
 
 nav ul#primary-nav {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 100vh;
 	background: var(--white);
-	transition: 0.55s 0.5s;
 	top: 4.3125rem;
 	z-index: 2;
 }
@@ -210,50 +213,123 @@ nav ul li {
 
 main {
 	width: 100%;
-	max-width: 66rem;
+	max-width: 76rem;
 	padding: 3rem 1.8125rem;
+}
+
+.hero-container {
+	margin-bottom: 2rem;
 }
 
 main h1 {
 	font-size: 2.2rem;
 	margin-top: 0;
-	margin-bottom: 0;
 }
 
-.last-visit {
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin-top: .5rem;
-	margin-bottom: 3rem;
+main .image-container {
+	overflow: hidden;
 }
 
-.gallery {
+main .image-container img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.summary {
 	padding: 1.5rem;
 	background-color: var(--grey-blue);
 	color: var(--secondary);
 	border-radius: 1rem;
 	margin-bottom: 2rem;
+}
+
+.cards {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
-.gallery-card {
-	width: 100%;
+.card {
+	text-align: center;
 	background: var(--white);
-	border-radius: 0.75rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1rem;
+	padding: 2.5rem 1.5rem;
+	color: var(--blue-200);
+	border-radius: 10px;
 }
 
-.gallery-card p {
-	margin-top: .5rem;
+.card h2 {
+	margin-bottom: .2rem;
 }
 
-.image-container img {
+.motto {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+.card ul li + li {
+	 margin-top: .5rem;
+}
+
+.card img {
+	margin-top: 1.5rem;
 	max-width: 100%;
+}
+
+article {
+	padding: 1.5rem;
+	background-color: var(--grey-blue);
+	color: var(--secondary);
+	display: grid;
+	grid-column: 1fr;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+}
+
+article h3 {
+	margin: 0 0 0.85rem;
+	grid-row: 1/2;
+}
+
+article p {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 1.1rem;
+	grid-row: 2/3;
+}
+
+.img-article-large {
+	display: none;
+}
+
+article img {
+	width: 100%;
+	border-radius: 0.75rem;
+	margin-top: 1.5rem;
+}
+
+.contact-area {
+	padding: 1.5rem;
+	background-color: var(--primary);
+	color: var(--secondary);
+	border-radius: 1rem;
+}
+
+.contact-info {
+	margin-bottom: 1rem;
+}
+
+.contact-info h3 {
+	margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+	font-size: 1.1rem;
+}
+
+iframe {
+	width: 100%;
+	border-radius: 0.75rem;
 }
 
 /* FOOTER */

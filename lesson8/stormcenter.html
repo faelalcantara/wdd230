@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will provide information about the weather in Preston, Idaho."
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/stormcenter.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<title>Storm Center | HowIsTheWeather.com</title>
+	</head>
+
+	<body>
+		<div class="banner hide">
+			Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+			park pavilion.
+		</div>
+		<header>
+			<nav class="navbar">
+				<button onclick="toggleMenu()" class="menu">
+					<span class="menu-global menu-top"></span>
+					<span class="menu-global menu-middle"></span>
+					<span class="menu-global menu-bottom"></span>
+				</button>
+				<div class="logo-container">
+					<img src="images/logo.png" alt="" />
+				</div>
+
+				<ul id="primary-nav" class="hide">
+					<li><a href="https://faelalcantara.github.io/wdd230/lesson-9/index.html">Home</a></li>
+					<li><a href="https://faelalcantara.github.io/wdd230/lesson6/preston.html">Preston</a></li>
+					<li><a href="https://faelalcantara.github.io/wdd230/lesson6/soda-springs.html">Soda Springs</a></li>
+					<li><a href="https://faelalcantara.github.io/wdd230/lesson6/fish-haven.html">Fish Haven</a></li>
+					<li><a href="https://faelalcantara.github.io/wdd230/lesson7/gallery.html">Gallery</a></li>
+					<li class="active-page">Storm Center</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<form action="#" method="post">
+				<label
+					>Full name*
+					<input
+						type="text"
+						name="fname"
+						required
+						pattern="/^[A-Za-z]+([\ A-Za-z]+)*/"
+				/></label>
+				<label
+					>Email <input type="email" name="email" placeholder="john@doe.com"
+				/></label>
+				<label>Phone number*<input type="tel" name="phone" required /></label>
+				<label>Zip code*<input type="number" name="zcode" required /></label>
+				<label>Storm date<input type="date" name="date" /></label>
+				<label
+					>Storm type
+					<input list="storm-type" name="type" />
+					<datalist id="storm-type">
+						<option value="Flash Flood"></option>
+						<option value="Hail"></option>
+						<option value="Hurricane"></option>
+						<option value="Thunderstorm"></option>
+						<option value="Tornado"></option>
+					</datalist>
+				</label>
+				<label
+					>Storm severity<input
+						type="range"
+						id="severity"
+						name="severity"
+						min="1"
+						max="10"
+						step="1"
+						value="1" /><span id="severity-value"></span
+				></label>
+        <label>Storm region
+          <select name="region" id="region">
+            <option value="" selected disabled>Select Region ...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select>
+        </label>
+        <div>
+          User in-danger level
+          <input type="radio" id="yes" name="danger" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="maybe" name="danger" value="maybe">
+          <label for="maybe">Maybe</label>
+          <input type="radio" id="no" name="danger" value="no">
+          <label for="no">No</label>
+        </div>
+        <label>Aditional information or comments<textarea name="aditional"></textarea></label>
+        <input type="submit" name="submit" value="Report storm">
+			</form>
+		</main>
+
+		<footer>
+			<ul class="footer-info">
+				<li class="copyright">&copy;HowIsTheWeather | Rafael A. da Silva</li>
+				<li id="date">Current Date</li>
+			</ul>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
