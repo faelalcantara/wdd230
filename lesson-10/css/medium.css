@@ -1,0 +1,31 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+	.banner {
+		font-size: 1.2rem;
+	}
+
+	main .hero-container h1 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.4rem;
+	}
+
+	main {
+		padding: 3rem 4rem 4rem;
+	}
+
+	main h1 {
+		font-size: 2.6rem;
+		text-align: center;
+	}
+
+	nav ul li {
+		text-align: center;
+	}
+	
+	article {
+		text-align: center;
+	}
+} /* end medium */
