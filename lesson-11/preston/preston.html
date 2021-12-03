@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page will provide information about the weather in Preston, Idaho."
+		/>
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/> -->
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<title>Preston Idaho | HowIsTheWeather.com</title>
+	</head>
+
+	<body>
+		<div class="banner hide">
+			Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+			park pavilion.
+		</div>
+		<header>
+			<nav class="navbar">
+				<button onclick="toggleMenu()" class="menu">
+					<span class="menu-global menu-top"></span>
+					<span class="menu-global menu-middle"></span>
+					<span class="menu-global menu-bottom"></span>
+				</button>
+				<div class="logo-container">
+					<img src="../images/logo.png" alt="Website logo image" />
+				</div>
+
+				<ul id="primary-nav" class="hide">
+					<li>
+						<a href="https://faelalcantara.github.io/wdd230/lesson-11/index.html"
+							>Home</a
+						>
+					</li>
+					<li class="active-page">Preston</li>
+					<li>
+						<a
+							href="https://faelalcantara.github.io/wdd230/lesson-11/soda-springs/soda-springs.html"
+							>Soda Springs</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://faelalcantara.github.io/wdd230/lesson-11/fish-haven/fish-haven.html"
+							>Fish Haven</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://faelalcantara.github.io/wdd230/lesson-11/gallery/gallery.html"
+							>Gallery</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://faelalcantara.github.io/wdd230/lesson-11/stormcenter/stormcenter.html"
+							>Storm Center</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="hero-container">
+				<h1>Preston Idaho</h1>
+
+				<div class="image-container">
+					<div class="weather-summary">
+						<h2>Weather Summary</h2>
+						<div class="summary-item">
+							Currently:
+							<div class="currently"><span>Sunny</span></div>
+						</div>
+						<div class="summary-item">
+							High:
+							<div><span class="high-temperature"></span>°F</div>
+						</div>
+						<div class="summary-item">
+							Wind Chill:
+							<div><span class="wind-chill"></span></div>
+						</div>
+						<div class="summary-item">
+							Humidity:
+							<div><span class="humidity"></span>%</div>
+						</div>
+						<div class="summary-item">
+							Wind Speed:
+							<div><span class="wind-speed">5</span> mph</div>
+						</div>
+					</div>
+					<picture>
+						<source
+							srcset="images/preston-768.jpg"
+							media="(min-width: 561px)"
+						/>
+						<source
+							srcset="images/preston-560.jpg"
+							media="(min-width: 420px) and (max-width: 560px)"
+						/>
+						<img
+							src="images/preston-400.jpg"
+							alt="Potography of Preston Town, Idaho"
+						/>
+					</picture>
+				</div>
+			</div>
+
+			<div class="forecast">
+				<h3>5 Day Forecast</h3>
+				<div class="forecast-main">
+					<!-- <div class="forecast-day">
+						<div class="week-day">Wed</div>
+						<img src="images/favicon.png" alt="Weather icon forecast" />
+						<div class="temperature">89 °F</div>
+					</div> -->
+				</div>
+				<div class="credits">
+					<a href="https://openweathermap.org/api" target="_blank"
+						>Powered by OpenWeather API</a
+					>
+				</div>
+			</div>
+
+			<article>
+				<h3>About Preston</h3>
+				<p>
+					<img
+						class="img-article-large"
+						src="images/preston-article.jpg"
+						alt="Preston Town, Idaho picture"
+					/>
+					Preston is a city in Franklin County, Idaho, United States. The
+					population was 5,204 at the 2010 census. The city is the county
+					seat of Franklin County. It is part of the Logan, Utah-Idaho
+					Metropolitan Statistical Area. The Bear River Massacre occurred in
+					1863 at a point a few miles northwest of Preston. The Bear River
+					Massacre Site is a National Historic Landmark. In 1866, Latter-day
+					Saint (LDS, or Mormon) pioneers arrived in the northern end of the
+					Cache Valley, stretching across southeastern Idaho and northeastern
+					Utah. They founded a community in that location and named it Worm
+					Creek, but in 1881 changed it to Preston because leaders of the LDS
+					Church in Salt Lake City objected to the name "Worm Creek" being part
+					of any church congregation's name. The name Preston was
+					suggested by a local member to honor William B. Preston, who at the
+					time was president of the LDS Church's Cache Stake. It was not
+					until the 1880s while William C. Parkinson was serving as the bishop
+					of the Preston LDS Ward that a regular townsite was laid out.
+					<img
+						class="img-article-small"
+						src="images/preston-article.jpg"
+						alt="Preston Town, Idaho picture"
+					/>
+				</p>
+				<div class="source"><a href="https://en.wikipedia.org/wiki/Preston,_Idaho" target="_blank">Information provided by www.wikipedia.org</a></div>
+			</article>
+
+			<div class="contact-area">
+				<div class="contact-info">
+					<h3>HowIsTheWeather</h3>
+					<p>480 S 1st W, Rexburg, ID</p>
+					<p>999.999.9999</p>
+					<p>contact@howistheweather.com</p>
+				</div>
+				<div class="map">
+					<iframe
+						id="gmap_canvas"
+						src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					></iframe>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<ul class="footer-info">
+				<li class="copyright">&copy;HowIsTheWeather | Rafael A. da Silva</li>
+				<li id="date">Current Date</li>
+			</ul>
+		</footer>
+
+		<script src="js/weatherData.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Open Sans:400,600", "Roboto:900"],
+				},
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+	.menu {
+		display: none;
+	}
+
+	nav.navbar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul#primary-nav {
+		width: 100%;
+		max-width: 53rem;
+		position: inherit;
+		height: 100%;
+		display: flex;
+	}
+
+	nav ul#primary-nav li {
+		font-size: 1.1rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	main {
+		width: 100%;
+		align-self: center;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.gallery-card:hover {
+		cursor: pointer;
+		box-shadow: 0px 10px 13px -7px var(--black), 5px 5px 15px 5px rgba(0,0,0,0);
+	}
+
+	footer ul {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer ul li + li {
+		margin-left: 1rem;
+	}
+} /* end large */
