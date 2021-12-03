@@ -90,7 +90,7 @@ function outputSummary(object) {
 }
 
 const apiKey = "1414ba56a14dbf67746a1932cb8b6b41";
-const url = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?id=5678757&units=imperial&appid=${apiKey}`;
 
 fetch(url)
 	.then((response) => response.json())

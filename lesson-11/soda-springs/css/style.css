@@ -213,7 +213,7 @@ nav ul li {
 
 main {
 	width: 100%;
-	max-width: 76rem;
+	max-width: 56rem;
 	padding: 3rem 1.8125rem;
 }
 
@@ -235,45 +235,89 @@ main .image-container img {
 	border-radius: 1rem;
 }
 
-.summary {
+.weather-summary {
+	background: var(--primary);
+	color: var(--secondary);
+	padding: 0.75rem 1.1rem;
+	display: inline-block;
+	border-radius: 0.75rem;
+	position: absolute;
+	margin: 1.5rem 0 1.5rem 1.5rem;
+	filter: opacity(0.85);
+}
+
+.weather-summary h2 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.summary-item {
+	font-size: 1.1rem;
+}
+
+.summary-item div {
+	color: var(--blue-100);
+	font-size: 1.2rem;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.forecast {
 	padding: 1.5rem;
-	background-color: var(--grey-blue);
+	background-color: var(--blue-200);
 	color: var(--secondary);
 	border-radius: 1rem;
 	margin-bottom: 2rem;
 }
 
-.cards {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1.5rem;
-}
-
-.card {
+.forecast h3 {
 	text-align: center;
-	background: var(--white);
-	padding: 2.5rem 1.5rem;
-	color: var(--blue-200);
-	border-radius: 10px;
-}
-
-.card h2 {
-	margin-bottom: .2rem;
-}
-
-.motto {
-	font-size: 1.1rem;
-	font-weight: 600;
+	color: var(--white);
 	margin-bottom: 1.5rem;
 }
 
-.card ul li + li {
-	 margin-top: .5rem;
+.forecast-main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+	gap: 1rem;
 }
 
-.card img {
-	margin-top: 1.5rem;
+.forecast-day {
+	width: 100%;
+	background: var(--primary);
+	border-radius: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.forecast-day img {
 	max-width: 100%;
+	/* filter: drop-shadow(-5px 5px 5px var(--grey-blue)); */
+}
+
+.week-day,
+.temperature {
+	width: 100%;
+	font-family: var(--header-font);
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.credits {
+	text-align: center;
+	color: var(--white);
+	margin-top: 1.5rem;
+}
+
+.credits a {
+	cursor: pointer;
+	color: var(--white);
+}
+
+.credits a:hover {
+	color: var(--primary);
 }
 
 article {
@@ -308,20 +352,17 @@ article img {
 	margin-top: 1.5rem;
 }
 
-.credits {
+.source {
 	text-align: center;
-	color: var(--blue-200);
 	margin-top: 1.5rem;
 }
 
-.credits a {
-	font-weight: 600;
-	display: inline;
+.source a {
+	color: var(--blue-200);
 	cursor: pointer;
-	color: rgb(0, 0, 255);
 }
 
-.credits a:hover {
+.source a:hover {
 	color: #F25C05;
 }
 

@@ -1,0 +1,94 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+	.menu {
+		display: none;
+	}
+
+	nav.navbar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul#primary-nav {
+		width: 100%;
+		max-width: 53rem;
+		position: initial;
+		height: 100%;
+		display: flex;
+	}
+
+	nav ul#primary-nav li {
+		font-size: 1.1rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	main {
+		width: 100%;
+		align-self: center;
+	}
+	
+	main .hero-container h1 {
+		font-size: 3.8rem;
+		text-align: center;
+	}
+
+	.image-container {
+		border-radius: 1.5rem;
+	}
+
+	.weather-summary {
+		margin-top: 2rem;
+		margin-left: 2rem;
+		padding: 1.4rem;
+	}
+
+	article {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 2rem;
+		border-radius: 1.5rem;
+	}
+	
+	.img-article-small {
+		display: none;
+	}
+
+	.img-article-large {
+		display: block;
+	}
+
+	article h3 {
+		grid-row: 1/2;
+		margin-bottom: 1.8rem;
+	}
+
+	article p {
+		grid-row: 2/3;
+		display: inline-block;
+	}
+
+	article img {
+		margin: 0 0 1rem 1.5rem;
+		float: right;
+		width: 350px;
+	}
+
+	.contact-area {
+		display: grid;
+		grid-template-columns: 3fr 5fr;
+		gap: 2rem;
+		padding: 2rem;
+		border-radius: 1.5rem;
+	}
+
+	footer ul {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer ul li + li {
+		margin-left: 1rem;
+	}
+} /* end large */
