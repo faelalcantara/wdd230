@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page is an Assignment for BYUI WDD230 Course, It's a Chamber of Commerce page for Petrópolis"
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="/css/config.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/directory.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<title>Directory | Petropolitan Chamber of Commerce</title>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<nav class="navbar">
+					<input type="checkbox" id="check" />
+					<label for="check" class="checkbtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<div class="logo">
+						<a href=""
+							><img
+								src="images/logo.png"
+								alt="Petropolitan Chamber Of Commerce"
+						/></a>
+					</div>
+					<ul>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/index.html"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/petropolis.html"
+								>The City</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/joinus.html"
+								>Join Our Community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/directory.html"
+								>Local Directory</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/contact.html"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<h1>Local Partners</h1>
+				<div class="buttons-container">
+					<button onclick="outputList()">Table view</button>
+					<button onclick="outputCards()">Card view</button>
+				</div>
+				<div id="info-container"></div>
+			</main>
+
+			<footer>
+				<div class="main-footer">
+					<div class="logo-container">
+						<img
+							src="images/logo-black.png"
+							alt="Petropolitan chamber of commerce logo"
+						/>
+						<h3>A Better Future is Everyone's Business.</h3>
+					</div>
+					<div class="links-container">
+						<ul>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/index.html"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/petropolis.html"
+									>The City</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/joinus.html"
+									>Join Our Community</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/directory.html"
+									>Local Directory</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/contact.html"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="social-media">
+						<h3>Follow our social media</h3>
+						<div class="icons-container">
+							<a href="https://www.instagram.com" target="_blank"
+								><img src="images/instagram.svg" alt="Instagram"
+							/></a>
+							<a href="https://www.facebook.com" target="_blank"
+								><img src="images/facebook.svg" alt="Facebook"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					&copy; <span id="current-year"></span> | Petropolitan Chamber of
+					Commerce
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/directory.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

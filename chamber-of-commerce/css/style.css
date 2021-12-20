@@ -1,0 +1,420 @@
+/* HERO */
+
+.hero-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5rem 2rem;
+	border-bottom: 1px solid var(--gray-10);
+}
+
+.hero-container img {
+	display: none;
+}
+
+.hero-button {
+	padding: 0.9rem 3rem;
+	font-size: 1.4rem;
+	font-weight: 600;
+	border-radius: 2rem;
+	background: var(--primary);
+	color: var(--white);
+	display: inline-block;
+}
+
+.secondary-hero-text {
+	font-size: 1.4rem;
+	color: var(--gray-100);
+}
+
+/* ADS SLIDE */
+
+.ads-container {
+	min-height: 16rem;
+	width: 100%;
+	background: var(--secondary);
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 2em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	padding: 2rem;
+}
+
+.item-1 {
+	animation-name: anim-1;
+}
+
+.item-2 {
+	animation-name: anim-2;
+}
+
+.item-3 {
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%,
+	8.3% {
+		left: -100%;
+		opacity: 0;
+	}
+	8.3%,
+	25% {
+		left: 0%;
+		opacity: 1;
+	}
+	33.33%,
+	100% {
+		left: 100%;
+		opacity: 0;
+	}
+}
+
+@keyframes anim-2 {
+	0%,
+	33.33% {
+		left: -100%;
+		opacity: 0;
+	}
+	41.63%,
+	58.29% {
+		left: 0%;
+		opacity: 1;
+	}
+	66.66%,
+	100% {
+		left: 100%;
+		opacity: 0;
+	}
+}
+
+@keyframes anim-3 {
+	0%,
+	66.66% {
+		left: -100%;
+		opacity: 0;
+	}
+	/* 74.96%, 91.62% { left: 25%; opacity: 1; } */
+	74.96%,
+	91.62% {
+		left: 0%;
+		opacity: 1;
+	}
+	100% {
+		left: 100%;
+		opacity: 0;
+	}
+}
+
+/* WEATHER SUMARY */
+
+.summary {
+	background: var(--white);
+	width: 100%;
+	padding: 2rem;
+}
+
+.weather-today {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.temperature-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.temperature-container img {
+	width: 100px;
+}
+
+.today-temperature {
+	font-family: var(--header-font);
+	color: var(--black);
+	font-size: 3.5rem;
+}
+
+.aditional-info {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aditional-item {
+	padding: 0.25rem 0.4rem;
+}
+
+.condition {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.weather-today h3 {
+	font-size: 2.25rem;
+	text-align: center;
+	color: var(--gray-200);
+	margin-bottom: 1.5rem;
+}
+
+.forecast-main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+	column-gap: 0.75rem;
+	row-gap: 2rem;
+	padding: 2rem 1rem;
+	margin-top: 2rem;
+	border-top: 1px solid var(--gray-10);
+}
+
+.forecast-day {
+	width: 100%;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.forecast-day img {
+	max-width: 90%;
+}
+
+.week-day,
+.temperature {
+	width: 100%;
+	font-family: var(--header-font);
+	color: var(--gray-100);
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.credits {
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.credits a {
+	cursor: pointer;
+}
+
+.credits a:hover {
+	color: var(--primary);
+}
+
+/* ABOUT */
+
+.about-section {
+	background: var(--primary);
+	padding: 2rem 2rem 3.8rem 2rem;
+}
+
+.about-section .porpose,
+.goals p {
+	text-align: center;
+	font-size: 1.4rem;
+	color: var(--white);
+}
+
+.about-section .porpose,
+.goals p + p {
+	margin-top: 1rem;
+}
+
+.about-section h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	color: var(--white);
+}
+
+.goals {
+	margin-top: 2.5rem;
+}
+
+/* EVENTS */
+
+.events {
+	padding: 2.5rem 0;
+}
+
+.events > h2 {
+	color: var(--black);
+	text-align: center;
+}
+
+.events p {
+	font-size: 1.4rem;
+}
+
+.articles-container {
+	display: grid;
+	gap: 2rem;
+	padding: 0 2rem;
+	margin-top: 2.5rem;
+}
+.topic-number {
+	color: var(--primary);
+}
+
+article {
+	background: var(--white);
+	padding: 3rem 2rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	/* border: 2px solid var(--gray-10); */
+	box-shadow: -1px 0px 20px -7px rgba(0, 0, 0, 0.2);
+}
+
+article > h2 {
+	font-size: 2rem;
+}
+.date .event-date {
+	font-size: 1.5rem;
+	color: var(--gray-100);
+}
+
+article p {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+.site-link {
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 2rem;
+	padding: 0.9rem 1.6rem;
+	border-radius: 2rem;
+	display: inline-block;
+	margin-top: 1.5rem;
+	/* background: var(--gray-10); */
+	border: 2px solid var(--gray-10);
+	cursor: pointer;
+}
+
+.site-link a {
+	color: var(--primary);
+}
+
+.site-link:hover {
+	background: var(--gray-10);
+	border: 1px solid var(--gray-10);
+}
+
+.article-image {
+	display: flex;
+	justify-content: center;
+}
+
+.article-image img {
+	width: 21.875rem;
+	max-width: 100%;
+	margin: 2rem 0;
+}
+
+/* CONTACT */
+
+.contact {
+	background: var(--secondary);
+	padding-top: 2.5rem;
+	text-align: center;
+}
+.contact-container {
+	margin: 0;
+}
+
+.contact p {
+	font-size: 1.4rem;
+}
+
+.contact p:first-child {
+	margin-top: 1rem;
+}
+
+.map {
+	height: 15rem;
+	margin-top: 3rem;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (min-width: 40.25rem) {
+	.articles-container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+}
+
+@media only screen and (min-width: 51.25rem) {
+	.ads-container {
+		min-height: 11rem;
+		text-align: center;
+	}
+
+	.weather-and-about {
+		padding: 5rem;
+		display: flex;
+	}
+
+	.summary {
+		flex: 4;
+		border: 1px solid var(--gray-50);
+	}
+
+	.about-section {
+		flex: 6;
+	}
+
+	.main-footer {
+		padding: 0 3rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5rem;
+	}
+
+	.logo-container img {
+		width: 100%;
+		max-width: 18rem;
+	}
+
+	.links-container {
+		text-align: center;
+	}
+
+	.social-media {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}
+
+@media only screen and (min-width: 60.25rem) {
+	.articles-container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2rem;
+	}
+}

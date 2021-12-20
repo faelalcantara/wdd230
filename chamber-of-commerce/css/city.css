@@ -1,0 +1,129 @@
+/* CITY PAGE */
+
+main {
+  width: 100%;
+  padding: 2rem 2rem 3.8rem 2rem;
+}
+
+main h1 {
+  font-size: 2.4rem;
+}
+
+main img {
+  max-width: 100%;
+  margin-top: .5rem;
+}
+
+main p {
+  font-size: 1.4rem;
+}
+
+main > p {
+  margin-top: 2rem;
+}
+
+main p + p {
+  margin-top: 2rem;
+}
+
+main a {
+  color: var(--primary) !important;
+  text-decoration: underline;
+  display: block;
+  margin-top: 1rem;
+}
+
+.current-events {
+  margin-top: 3rem;
+}
+
+.current-events h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.event {
+  padding: 0 1.5rem;
+}
+
+.event + .event {
+  margin-top: 1rem;
+}
+
+.event .date, .location {
+  font-size: 1.1rem;
+}
+
+.places-to-visit {
+  background: var(--primary);
+  padding: 3rem 2rem;
+}
+
+.places-to-visit h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--white);
+}
+
+.card {
+  background: var(--white);
+  overflow: hidden;
+}
+
+.card:first-child {
+  margin-top: 2rem;
+}
+
+.cards-container .card + .card{
+  margin-top: 2rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  padding:  1.5rem 1.5rem 0 1.5rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  padding: .5rem 1.5rem 1.5rem 1.5rem;
+}
+
+@media only screen and (min-width: 40.25rem) {
+  main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main img {
+    max-width: 40rem;
+  }
+	
+  .places-to-visit {
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 60.25rem) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}

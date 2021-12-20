@@ -1,0 +1,122 @@
+:root {
+  --even-line:#e7f0ed;
+  --odd-line:  #e7ffed;
+}
+
+/* Directory Page */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondary);
+  width: 100%;
+  padding: 2rem 2rem 3rem 2rem;
+}
+
+main h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+main img {
+  max-width: 100%;
+  margin-top: .5rem;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.buttons-container button {
+  padding: 0.8rem 1.5rem;
+	font-size: 1.4rem;
+	font-weight: 600;
+	border-radius: 2rem;
+	background: var(--white);
+	color: var(--black);
+	display: inline-block;
+  border: none;
+}
+.buttons-container img {
+  width: 20px;
+}
+
+#info-container {
+  display: grid;
+  grid-column: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+
+}
+
+.member-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.member-card h3 {
+  font-size: 1.4rem;
+}
+
+.address {
+  font-size: 1.1rem;
+  margin-top: .75rem;
+}
+
+.phone {
+  font-size: 1.1rem;
+  margin-top: .5rem;
+}
+
+.website {
+  font-size: 1.1rem;
+  margin-top: .5rem;
+}
+
+
+/* TABLE  */
+
+.data-table {
+  width: 100%;
+  background: var(--white);
+  border-collapse: collapse;
+  border: 10px solid var(--primary);
+}
+
+thead tr:nth-child(1) th {
+  font-size: 1.5rem;
+  border: 10px solid var(--primary);
+}
+
+thead tr:nth-child(2) th {
+  border: none;
+  font-size: 1.1rem;
+}
+
+td, th {
+  text-align: center;
+  border: 2px solid var(--white);
+  padding: .5rem .625rem;
+}
+
+thead tr:first-child {
+  background: var(--primary);
+  color: var(--white);
+}
+
+thead tr + tr{
+  background: var(--gray-100);
+  color: white;
+}
+
+tbody tr:nth-child(odd) td{
+  background: var(--odd-line);
+}
+
+tbody tr:nth-child(even) td{
+  background: var(--even-line);
+}

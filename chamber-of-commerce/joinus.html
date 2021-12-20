@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Rafael Alcantara da Silva" />
+		<meta
+			name="description"
+			content="This page is an Assignment for BYUI WDD230 Course, It's a Chamber of Commerce page for Petrópolis"
+		/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="/css/config.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/joinus.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<title>Join | Petropolitan Chamber of Commerce</title>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<nav class="navbar">
+					<input type="checkbox" id="check" />
+					<label for="check" class="checkbtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<div class="logo">
+						<a href=""
+							><img
+								src="images/logo.png"
+								alt="Petropolitan Chamber Of Commerce"
+						/></a>
+					</div>
+					<ul>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/index.html"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/petropolis.html"
+								>The City</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/joinus.html"
+								>Join Our Community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/directory.html"
+								>Local Directory</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/contact.html"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<div class="board-area">
+					<div class="plans-list">
+						<h2>Our Plans</h2>
+
+						<div class="plan">
+							<h3>Non-Profit</h3>
+							<div class="price">$100 per Year</div>
+							<div class="description">
+								Smaller businesses are critically important in The Rexburg
+								Chamber advocacy, and starting at only $100, business owners can
+								have a say in how government affects their business. One person
+								per member company may participate in The Rexburg Chamber
+								Councils, receive The Rexburg Chamber email updates including
+								Capitol Reports and urgent notices, and receive invitations to
+								exclusive programs including receptions with state and federal
+								officials. Support The Rexburg Chamber, the City Chamber, as it
+								supports your business!
+							</div>
+						</div>
+						<div class="plan">
+							<h3>Bronze</h3>
+							<div class="price">$200 per Year</div>
+							<div class="description">
+								<ul>
+									<li>
+										Recognition on the Rexburg Chamber website Partner page with
+										link to company website
+									</li>
+									<li>Annual on-site Legislative Review</li>
+									<li>
+										Placard recognition at all Rexburg Chamber events and
+										publications
+									</li>
+									<li>
+										Recognition on the Rexburg Chamber website Partner page
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="plan">
+							<h3>Silver</h3>
+							<div class="price">$400 per Year</div>
+							<div class="description">
+								<ul>
+									<li>
+										Prominent placard recognition at all Rexburg Chamber events
+										and in publications
+									</li>
+									<li>
+										Prominent Logo placement on Partners page of the Rexburg
+										Chamber website
+									</li>
+									<li>
+										Annual on-site legislative briefing customized to your
+										business
+									</li>
+									<li>
+										Attendance* for one at Rexburg Chamber receptions, Annual
+										Meeting, & Rexburg Business Day
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="plan">
+							<h3>Gold</h3>
+							<div class="price">$1000 per Year</div>
+							<div class="description">
+								<ul>
+									<li>
+										Chair’s Roundtable participation for an executive of your
+										company
+									</li>
+									<li>
+										Table at your choice of a Rexburg Chamber featured event
+									</li>
+									<li>Annual lunch with the Rexburg Chamber President</li>
+									<li>
+										Prominent logo placement on Partners page of the Rexburg
+										Chamber website
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-area">
+					<h2>Contact Us</h2>
+					<form action="confirmation.html" method="get" class="form-example">
+						<div class="form-item">
+							<label for="name">Name: </label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="form-item">
+							<label for="last-name">Last name: </label>
+							<input type="text" name="las-name" id="last-name" required />
+						</div>
+						<div class="form-item">
+							<label for="title">Title: </label>
+							<input type="text" name="title" id="title" />
+						</div>
+						<div class="form-item">
+							<label for="email">Email: </label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="form-item">
+							<label for="phone">Phone: </label>
+							<input type="tel" name="phone" id="phone" />
+						</div>
+						<div class="form-item">
+							<label for="bname">Business name: </label>
+							<input type="text" name="bname" id="bname" required />
+						</div>
+						<div class="form-item">
+							<label for="address">Business address: </label>
+							<input type="text" name="address" id="address" />
+						</div>
+						<div class="form-item">
+							<label for="website">Business website: </label>
+							<input type="text" name="website" id="website" />
+						</div>
+						<div class="form-item">
+							<label for="plan">Business website: </label>
+							<select name="plan" id="pet-select">
+								<option value="">--Please choose an option--</option>
+								<option value="non-profit">Non-profit ($100)</option>
+								<option value="bronze">Bronze ($200)</option>
+								<option value="silver">Silver ($400)</option>
+								<option value="gold">Gold ($1000)</option>
+								>
+							</select>
+						</div>
+
+						<div class="form-item">
+							<label for="story">Message:</label>
+							<textarea id="story" name="story" rows="5" cols="33"></textarea>
+						</div>
+						<div class="form-item">
+							<input type="submit" value="Send Message" id="contact-btn" />
+						</div>
+					</form>
+				</div>
+			</main>
+
+			<div class="contact">
+				<h2>Contact Info</h2>
+				<div class="contact-container">
+					<div class="contact-info">
+						<p>+55 24 22543000</p>
+						<p>Rua do Imperador, 1500 - Centro</p>
+						<p>contact@petcc.com.br</p>
+					</div>
+					<div class="map">
+						<iframe
+							id="gmap_canvas"
+							src="https://maps.google.com/maps?q=petropolis&t=&z=13&ie=UTF8&iwloc=&output=embed"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+						></iframe>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="main-footer">
+					<div class="logo-container">
+						<img
+							src="images/logo-black.png"
+							alt="Petropolitan chamber of commerce logo"
+						/>
+						<h3>A Better Future is Everyone's Business.</h3>
+					</div>
+					<div class="links-container">
+						<ul>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/index.html"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/petropolis.html"
+									>The City</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/joinus.html"
+									>Join Our Community</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/directory.html"
+									>Local Directory</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://faelalcantara.github.io/wdd230/chamber-of-commerce/contact.html"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="social-media">
+						<h3>Follow our social media</h3>
+						<div class="icons-container">
+							<a href="https://www.instagram.com" target="_blank"
+								><img src="images/instagram.svg" alt="Instagram"
+							/></a>
+							<a href="https://www.facebook.com" target="_blank"
+								><img src="images/facebook.svg" alt="Facebook"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					&copy; <span id="current-year"></span> | Petropolitan Chamber of
+					Commerce
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/weatherData.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

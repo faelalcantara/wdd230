@@ -1,0 +1,53 @@
+{
+  "members": [
+    {
+      "name": "Extremo Suplementos",
+      "phoneNumber": "(24) 2242-4054",
+      "website": "N/A",
+      "address": "R. Dr. Alencar Lima, 34 - Centro, Petrópolis - RJ, 25620-050"
+         
+    },
+    {
+      "name": "Sander Contabilidade",
+      "phoneNumber": "(24) 2221-3148",
+      "website": "sandercontabilidade.com",
+      "address": "R. Dr. Agostinho Goulão, 22 - Corrêas, Petrópolis - RJ, 25730-050"
+        
+    },
+    {
+      "name": "Super Snacks Food Delivery",
+      "phoneNumber": "(24) 2244-9080",
+      "website": "N/A",
+      "address": "R. Elyzio Alves, 200 - Caxambu, Petrópolis - RJ, 25615071"
+        
+    },
+    {
+      "name": "Fast Pizza Delivery",
+      "phoneNumber": "(24) 2231-2005",
+      "website": "www.fastpizza.net.br",
+      "address": "R. Quissamã, 986 - Quissamã, Petrópolis - RJ, 25615-412"
+      
+    },
+    {
+      "name": "Casa & Video",
+      "phoneNumber": "4002-3535",
+      "website": "www.casaevideo.com.br",
+      "address": "Rua do Imperador, 300 - Centro, Petrópolis - RJ, 25635-000"
+      
+    },
+    {
+      "name": "Pequeno Motos",
+      "phoneNumber": "(24) 2245-3928",
+      "website": "N/A",
+      "address": "R. João Caetano, 369 - Caxambu, Petrópolis - RJ, 25610-011"
+      
+    },
+    {
+      "name": "Padaria Ponto do Pão",
+      "phoneNumber": "(24) 2243-1250",
+      "website": "N/A",
+      "address": "R. João Caetano, 5 - Caxambu, Petrópolis - RJ, 25610-011"
+      
+    }
+  ]
+}
