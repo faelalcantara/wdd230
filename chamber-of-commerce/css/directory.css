@@ -46,7 +46,7 @@ main img {
 
 #info-container {
   display: grid;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 2rem;
 
